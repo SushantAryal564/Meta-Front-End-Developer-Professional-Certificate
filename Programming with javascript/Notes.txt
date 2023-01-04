@@ -1,0 +1,64 @@
+1. Introduction to Functional Programming:
+   Two commonly used paradigm:
+    1. Functional Programming
+    2. OOP
+  Many function by default return value of undefined.
+  First class Function:
+    This means that a function can be pass to other function, save as a variable, return from other function.
+  Higher order function
+    A higher order function is a function that has either one or both of the following characteristics:
+      It accepts other function as arguments.
+      It return function when invoked.
+  Pure function and side Effect 
+    Return exact same result as long as it's given the same value. Side effect is any instance where a function make a change outside of itself. Function shouldn't have any side effects.
+
+2. Function calling and recursion
+3. Introduction to scope
+   Code that exists outside of function is called gobal scope.
+   ES5 Javascript functin can build local scope
+   ES6 block scope
+   block scope is build using let and const.
+4. Comparing var, let and const
+   Var:
+    we can access a var variable before initialization
+    We can declare and redeclare the same var variable without errors.
+  Let:
+    We cannot access a let varialbe before we declare it .
+    We can declare and unassigned varialbe with let.
+    We can't redeclare a let varialbe.
+    We can reassign.
+  Const:
+    It must be initialize.
+    We cannot access the const varialbe before assignment.
+    We can't redeclare a const variable.
+
+5. Introduction to object oriented programming
+   OOP revolves around the idea of organizing our program using object to group related data and functionality.
+   OOP helps developer to mimic the relationship between objects in the real world.
+      Allows you to write modular code.
+      Makes your code more flexible
+      Makes your code reusable.
+   The four fundamental principle of OOP are inheritance, encapsulation, abstraction and polymorphism.
+   Inheritance:
+   It is one of the foundation of object oriented programming.
+   encapsulation:
+   It make the code implementation hidden from other users, in the scence that they don't have to know how my code works in order to consume the code.
+6. Constructor
+   Special functin that allows us to build instance of these built in native objects. All the constructor are capitalized.
+   To use the constructor function, I must prepend it with the operator new.
+   Some built in object do have constructor when they serve a particular purpose to allow us to instantiate a specific instance of a given object constructor.
+   The built-in Date object is perfectly suited for having a constructor because each new date object instance I build should have unique data by definition, since it's going to be a different timestamp - it's going to be built at a different moment in time.
+  Math object, don't need a constructor. They're just static objects whose properties and methods can be accessed directly, from the built-in object itself.
+  let apple = new String("apple");
+  console.log(apple); 
+  let pear = "pear";
+  console.log(pear);
+  The pear variable is a string literal, that is, a primitive Javascript value.
+  The pear variable, being a primitive value, will always be more performant than the apple variable, which is an object.
+  you can't compare a String object with another String object, even when their values are identical.
+  You're getting the false when comparing objects because it is not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved
+
+7. Inheritance
+   Prototype is an object which hold data to be shared by multiple other object. 
+   Javascript implement prototypal inheritance model.
+   
