@@ -61,4 +61,14 @@
 7. Inheritance
    Prototype is an object which hold data to be shared by multiple other object. 
    Javascript implement prototypal inheritance model.
-   
+   In javascript, we can use a prototype object to hold properties that can be shared with various other objects.
+   All object that are built from the prototype share the same functionality.
+   The class syntax in JavaScript allows us to clearly separate individual object's data - which exists on the object instance itself - from the shared object's functionality (methods), which exist on the prototype and are shared by all object instances.
+    super is used to specify what property gets inherited from the super-class in the sub-class.
+8. Destructing arrays and objects:
+9. For of loops and objects
+   For in loop is unreliable as they iterate not only over the specified objects, but also its prototype.
+   For of is reliable.
+10. Data Structure
+   Most common data structure object, array, map and sets. 
+   A map can feel very similar to an object in JS. However, it doesn't have inheritance. No prototypes! This makes it useful as a data storage.
